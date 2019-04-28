@@ -81,10 +81,8 @@ class Client:
 
             k = self._window.checkKey()
             if k == 'Left' or k == 'Right':
-                print(k)
                 self._pressed[k] = True
             elif k == '':
-                print('null')
                 self._pressed = {}
             if 'Left' in self._pressed:
                 self.post('move_left')
